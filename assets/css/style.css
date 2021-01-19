@@ -9,6 +9,9 @@
 .d_flex{
     display: flex;
 }
+.c_grey{
+    color: #888888
+}
 
 /********** HEADER **********/
 header{
@@ -82,7 +85,6 @@ nav{
 
 /********** MAIN **********/
 main{
-    background-color: red;
     height:3270px;
     width: 100vw;
 }
@@ -90,10 +92,47 @@ main{
     width: 90%;
     margin:auto;
 } 
+
+/* servizi */
 .servizi{
-    background-color: aqua;
-    height:570px;
+    background-color: white;
+    height:710px;
+    text-align: center;
 }
+.servizi > div:first-child{
+    padding-top: 50px;
+    color: #F9636B
+}
+.servizi h3{
+    margin: 10px 0;
+    font-size: 30px;
+}
+.servizi h3 span{
+    font-weight: 400;
+}
+.card_servizi{
+    background-color: white;
+    height: 300px;
+    width: 25%;
+    padding: 30px 50px;
+    margin: 100px 0;
+}
+.card_servizi img{
+    height:100px;
+    margin-bottom: 40px;
+}
+.card_servizi h4{
+    margin-bottom: 30px;
+}
+.servizi button{
+    background: linear-gradient(270deg, rgba(255,70,70,1) 0%, rgba(209,33,99,1) 62%);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding:10px 20px;
+}
+
+/* start_your_project */
 .start_your_project{
     background-color: blue;
     height: 420px;
