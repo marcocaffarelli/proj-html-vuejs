@@ -11,15 +11,35 @@
 
 /* header */
 header{
-    background-color: orange;
+    background-color: #527CEB;
     height: 550px;
     width: 100vw;
 }
 nav{
-    background-color: yellow;
     height: 60px;
     width: 90%;
     margin:auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_navbar img{
+    width: 130px;
+}
+.link_navbar ul li{
+    list-style: none;
+}
+.link_navbar ul li a{
+    text-decoration: none;
+    padding: 0 10px;
+    color:white;
+}
+.link_navbar button{
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 100%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 4px 8px;
 }
 
 /* main */

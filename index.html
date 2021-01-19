@@ -13,7 +13,26 @@
             <!-- header -->
             <header>
                 <!-- navbar -->
-                <nav></nav>
+                <nav class="d_flex">
+                    <!-- parte sinistra della navbar -->
+                    <div class="logo_navbar">
+                        <img src="./assets/img/white-logo-2.png" alt="logo Phlox corporate">
+                    </div>
+                    <!-- /parte sinistra della navbar -->
+
+                    <!-- parte destra della navbar -->
+                    <div class="link_navbar">
+                        <ul class="d_flex">
+                            <!-- link della navbar -->
+                            <li v-for="link in listLinkNavbar">
+                                <a href="#">{{link}}</a>     
+                            </li>
+                            <!-- /link della navbar -->
+                            <button>Sign In</button>
+                        </ul>
+                    </div>
+                    <!-- parte destra della navbar -->
+                </nav>
                 <!-- /navbar -->
 
                 <!-- jumbotron -->
