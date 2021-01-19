@@ -34,10 +34,41 @@ let app = new Vue({
                 testo:"When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper",
             },
         ],
+        
+        //array di immagini per lo slider
+        immagini:[
+            './assets/img/sale80.jpg',
+            './assets/img/indice.jpg',
+            './assets/img/Dry.jpg',
+            './assets/img/dust-cover.jpg',
+            './assets/img/indice.jpg',
+        ],
+        //creato contatore che indica l'indice dell'array
+        contatore1: 0,
+        contatore2: 1,
+        contatore3: 2,
+        contatore4: 3,
+        contatore5: 4,
     },
 
     methods:{
+          //cliccando sul bottone right le immagini si spostano a destra
+          avanti(){ 
+            (this.contatore1 == this.immagini.length - 1) ? this.contatore1 = 0 : this.contatore1++
+            (this.contatore2 == this.immagini.length - 1) ? this.contatore2 = 0 : this.contatore2++
+            (this.contatore3 == this.immagini.length - 1) ? this.contatore3 = 0 : this.contatore3++
+            (this.contatore4 == this.immagini.length - 1) ? this.contatore4 = 0 : this.contatore4++
+            (this.contatore5 == this.immagini.length - 1) ? this.contatore5 = 0 : this.contatore5++
+         },
 
+         //cliccando sul bottone left le immagini si postano a sinistra
+         indietro(){ 
+            (this.contatore1 == 0) ? this.contatore1 = this.immagini.length -1 : this.contatore1--
+            (this.contatore2 == 0) ? this.contatore2 = this.immagini.length -1 : this.contatore2--
+            (this.contatore3 == 0) ? this.contatore3 = this.immagini.length -1 : this.contatore3--
+            (this.contatore4 == 0) ? this.contatore4 = this.immagini.length -1 : this.contatore4--
+            (this.contatore5 == 0) ? this.contatore5 = this.immagini.length -1 : this.contatore5--
+         }
     },
 
 });
