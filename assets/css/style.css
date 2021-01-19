@@ -4,20 +4,25 @@
     box-sizing: border-box;
 }
 
-/* utility */
+/********** UTILITY **********/
 .d_flex{
     display: flex;
 }
 
-/* header */
+/********** HEADER **********/
 header{
-    background-color: #527CEB;
-    height: 550px;
+    background-color: rgb(0, 0, 49);
+    background-image: url(../img/header.png);
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: 81% 40%;
+    height: 650px;
     width: 100vw;
 }
+/* navbar */
 nav{
     height: 60px;
-    width: 90%;
+    width: 80%;
     margin:auto;
     justify-content: space-between;
     align-items: center;
@@ -37,12 +42,44 @@ nav{
 .link_navbar button{
     background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 100%);
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     color: white;
-    padding: 4px 8px;
+    padding: 5px 8px;
+    margin-left: 30px;
 }
 
-/* main */
+.jumbodron{
+    height: 590px;
+    color: white;
+    margin-left: 10%;
+    flex-direction: column;
+    justify-content: center;
+}
+.jumbodron h1, .jumbodron h2{
+    font-size: 50px;
+}
+.titolo_magro{
+    font-weight: 300;
+}
+.jumbodron div{
+    color: #03A7D3E6;
+    padding: 30px 0;
+}
+.jumbodron button{
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 5px 20px;
+}
+.jumbodron button:first-child{
+    background: linear-gradient(270deg, rgba(255,70,70,1) 0%, rgba(209,33,99,1) 62%);
+}
+.jumbodron button:last-child{
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 100%);
+    margin: 0 20px;
+}
+
+/********** MAIN **********/
 main{
     background-color: red;
     height:3270px;
@@ -74,7 +111,7 @@ main{
     height: 1430px;
 }
 
-/* footer */
+/********** FOOTER **********/
 footer{
     background-color: green;
     width:100vw;
