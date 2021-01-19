@@ -61,7 +61,7 @@
                 <!-- servizi -->
                 <section class="servizi">
                     <div>Our services</div>
-                    <h3>What <span>We Do</span></h3>
+                    <h3>What <span class="titolo_magro">We Do</span></h3>
                     <div class="c_grey">When,while the lovely valley teems with vapour around meand the</div>
                     
                     <!-- card container -->
@@ -96,26 +96,62 @@
 
                 <!-- portfolio -->
                 <section class="portfolio">
-                    <div>Portfolio</div>
-                    <div class="d_flex">
-                        <div>latest work</div>
-                        <div>
-                            <button @click = "indietro">left</button>
-                            <button @click = "avanti">right</button>
+                    <div class="container_testo_portfolio">
+                        <div>Portfolio</div>
+                        <div class="d_flex arrow_text_container">
+                            <h3>latest <span class="titolo_magro">work</span></h3>
+                            <div class="arrow">
+                                <i @click = "indietro" class="far fa-arrow-alt-circle-left"></i>
+                                <i @click = "avanti" class="far fa-arrow-alt-circle-right"></i>
+                            </div>
                         </div>
                     </div>
+                    <!-- slider -->
                     <div class="slider-wrapper">
+                        <!-- immagini dello slider -->
                         <div class="images d_flex">
-                            <img :src="immagini[contatore1]"> 
-                            <img :src="immagini[contatore2]"> 
-                            <img :src="immagini[contatore3]"> 
-                            <img :src="immagini[contatore4]">    
-                            <img :src="immagini[contatore5]"> 
+                            <div class="card_portfolio">
+                                <img :src="immagini[contatore1]">
+                                <div class="d_flex container_text_portfolio">
+                                    <h5>Satisfy Poster</h5>
+                                    <span>Branding Strategy</span>
+                                </div>
+                            </div> 
+                            <div class="card_portfolio">
+                                <img :src="immagini[contatore2]">
+                                <div class="d_flex container_text_portfolio">
+                                    <h5>Basket of Flowers on table</h5>
+                                    <span>Branding Strategy</span>
+                                </div>
+                            </div> 
+                            <div class="card_portfolio">
+                                <img :src="immagini[contatore3]">
+                                <div class="d_flex container_text_portfolio ">
+                                    <h5>Purinky Products</h5>
+                                    <span>Digital Experience</span>
+                                </div>
+                            </div> 
+                            <div class="card_portfolio">
+                                <img :src="immagini[contatore4]">
+                                <div class="d_flex container_text_portfolio">
+                                    <h5>Satisfy Poster</h5>
+                                    <span>Branding Strategy</span>
+                                </div>
+                            </div> 
+                            <div class="card_portfolio">
+                                <img :src="immagini[contatore5]">
+                                <div class="d_flex container_text_portfolio">
+                                    <h5>Titolo titolo Titolo</h5>
+                                    <span>Testo testo Testo</span>
+                                </div>
+                            </div> 
                         </div>
+                        <!-- /immagini dello slider -->
                         <div class="nav">
                             <i class="fas fa-circle" :class="(index == contatore1) ? 'active' : null" v-for="(immagine, index) in immagini"></i>
                         </div>
                     </div>
+                    <!-- /slider -->
                 </section>
                 <!-- /portfolio -->
 

@@ -63,7 +63,7 @@ nav{
     font-size: 45px;
 }
 .titolo_magro{
-    font-weight: 300;
+    font-weight: 400;
 }
 .jumbodron div{
     color: #03A7D3E6;
@@ -106,9 +106,6 @@ main{
 .servizi h3{
     margin: 10px 0;
     font-size: 30px;
-}
-.servizi h3 span{
-    font-weight: 400;
 }
 .card_servizi{
     background-color: white;
@@ -178,19 +175,64 @@ main{
 }
 /* portfolio */
 .portfolio{
-    background-color: white;
+    background-color: #FFFFFF;
     height: 570px;
-    width: 100%;
+    max-width: 100%;
 }
-.portfolio img{
-    width: 26.5%;
-    border-radius: 20px;
-    position: relative;
-    left: 320px;
-    margin: 0 1%;
+.portfolio .container_testo_portfolio{
+    margin-left: 10%;
+}
+.portfolio > .container_testo_portfolio > div:first-child{
+    color: #F9636B;
+    margin-top: 70px;
+}
+.arrow_text_container{
+    justify-content: space-between;
+}
+.portfolio h3{
+    font-size: 30px;
+    margin-bottom: 70px;
+}
+.portfolio h3 > span{
+    font-size: 25px;
+}
+.portfolio .arrow{
+    font-size: 30px;
+    margin-right: 10%;
+    color: #F9636B;
+
 }
 .images{
     flex-direction: row-reverse;
+}
+.portfolio .card_portfolio{
+    background-color: white;
+    height:250px;
+    border-radius: 20px;
+    position: relative;
+    left: 0;
+    margin: 0 1%;
+    box-shadow: 1px 1px 15px lightgrey;
+}
+.portfolio img{
+    width: 100%;
+    border-radius: 20px;
+}
+.portfolio .container_text_portfolio{
+    justify-content: space-between;
+    margin-top: 12px;
+    padding: 0 10px;
+}
+.portfolio .card_portfolio span{
+font-size: 13px;
+}
+.portfolio .nav{
+    text-align: center;
+    margin-top: 70px;
+}
+.nav > i {
+    color: lightgrey;
+    padding: 0 5px;
 }
 .nav > i.active {
     color: #F9636B;
