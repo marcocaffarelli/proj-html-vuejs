@@ -78,6 +78,19 @@ let app = new Vue({
                 testoGrassetto:"Shabnam Dhillion, wife of RSSB chief Gurinder Dhillon, passes away in London",
             },
         ],
+
+        //cards section blog e testimonial
+        cardsTestimonial:[
+            {
+                img:"ragazza-3.png",
+            },
+            {
+                img:"ragazza-2.png",
+            },
+            {
+                img:"ragazza-1.png",
+            },
+        ],
     },
 
     methods:{
