@@ -156,7 +156,26 @@
                 <!-- /portfolio -->
 
                 <!-- listino prezzi -->
-                <section class="listino_prezzi"></section>
+                <section class="listino_prezzi">
+                    <div>Price List</div>
+                    <h3>Our <span class="titolo_magro">Pricing</span></h3>
+                    <div>When,while the lovely valley teems with vapour around meand the meridian sun strikes<br> the upper surface. </div>
+                    <!-- card listino prezzi -->
+                    <div v-for="card in cardsList" class="card_listino_prezzi">
+                        <h4>{{card.titolo}}</h4>
+                        <h5>{{card.titoloPiccolo}}</h5>
+                        <div>$</div>
+                        <div>{{card.numero}}</div>
+                        <div>Per Month</div>
+                        <div>Creative <span>Design Enabled</span></div>
+                        <div>Vibrant <span>Color Usage</span></div>
+                        <div>Eye <span>Catching Design</span></div>
+                        <div>Extreme <span>Typography</span></div>
+                        <div>Exceptional <span>Design</span></div>
+                        <button>Order Nov <i class="fas fa-long-arrow-alt-right"></i></button>
+                    </div>
+                    <!-- /card listino prezzi -->     
+                </section>
                 <!-- /listino prezzi -->
 
                 <!-- blog e testimonial -->

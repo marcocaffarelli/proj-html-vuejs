@@ -49,6 +49,25 @@ let app = new Vue({
         contatore3: 2,
         contatore4: 3,
         contatore5: 4,
+    
+        //cards section listino prezzi
+        cardsList:[
+            {
+                titolo:"Designing",
+                titoloPiccolo:"Process",
+                numero:"40",
+            },
+            {
+                titolo:"Developing",
+                titoloPiccolo:"Product",
+                numero:"60",
+            },
+            {
+                titolo:"Supporting",
+                titoloPiccolo:"Clients",
+                numero:"80",
+            },
+        ],
     },
 
     methods:{
