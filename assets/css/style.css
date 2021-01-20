@@ -309,7 +309,7 @@ font-size: 13px;
 /* blog e testimonial */
 .blog_testimonial{
     background-color: white;
-    height: 1430px;
+    height: 1600px;
     padding-top: 250px;
     text-align: center;
     color: black;
@@ -404,6 +404,11 @@ font-size: 13px;
 } 
 .margin_top{
     margin-top: 80px;
+}
+.loghi{
+    list-style: none;
+    margin-top: 150px;
+    justify-content: space-around;
 }
 /********** FOOTER **********/
 footer{

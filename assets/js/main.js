@@ -91,6 +91,24 @@ let app = new Vue({
                 img:"ragazza-1.png",
             },
         ],
+
+        loghi:[
+            {
+                img:"client-1-1.png",
+            },
+            {
+                img:"clienty-2.png",
+            },
+            {
+                img:"clienty-4.png",
+            },
+            {
+                img:"client-5.png",
+            },
+            {
+                img:"clienty-3.png",
+            },
+        ],
     },
 
     methods:{
