@@ -309,25 +309,81 @@ font-size: 13px;
    padding-left: 50px;
 }
 
-
-
-
 /* blog e testimonial */
 .blog_testimonial{
     background-color: white;
     height: 1430px;
     padding-top: 250px;
     text-align: center;
+    color: black;
 }
-
+.blog_testimonial > div:first-child{
+    margin-top: 50px;
+    color: #F9636B;
+}
+.blog_testimonial p{
+    font-size: 12px;
+}
+.blog_testimonial h3{
+    margin: 20px 0;
+    font-size: 30px;
+}
+.blog_testimonial .card_container{
+    width: 100%;
+    margin-top: 60px;
+}
 .blog_testimonial .card_blog_grande{
-    
-    border: 1px solid #F9636B;
+    background-image: url(../img/mano.jpg);
+    background-size:cover;
     border-radius: 20px;
+    width: 45%;
+    height: 300px;
+    margin: 0 50px;
+
+}
+.blog_testimonial .card_blog_grande_black{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    color: white;
+    text-align: left;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px 10px;
+}
+.blog_testimonial .card_blog_grande_black h4{
+  margin: 10px 0;
 }
 .blog_testimonial .card_blog{
-    border: 1px solid #F9636B;
+    background: linear-gradient(135deg, rgb(1, 0, 49) 0%, rgb(6, 0, 83) 92%);
     border-radius: 20px;
+    width: 18%;
+    height: 300px;
+    margin: 0 50px;
+    text-align: left;
+    color: white;
+    padding: 20px;
+}
+.blog_testimonial .card_blog p:first-child{
+    margin: 20px 0;
+}
+.blog_testimonial .card_blog h4{
+    margin: 20px 0;
+}
+.blog_testimonial .card_blog button{
+    margin-top: 50px;
+}
+.blog_testimonial .card_blog:last-child button{
+    margin-top: 30px;
+}
+    
+.blog_testimonial button{
+    border: none;
+    border-radius: 25px;
+    color: #888888;
+    background-color: white;
+    padding: 10px 20px;
 }
 
 /********** FOOTER **********/
