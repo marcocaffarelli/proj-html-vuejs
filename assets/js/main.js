@@ -68,6 +68,16 @@ let app = new Vue({
                 numero:"80",
             },
         ],
+
+        //cards section blog e testimonial
+        cardsBlog:[
+            {
+                testoGrassetto:"Clearing Corporations get Sebi nod to invest in overnight funds",
+            },
+            {
+                testoGrassetto:"Shabnam Dhillion, wife of RSSB chief Gurinder Dhillon, passes away in London",
+            },
+        ],
     },
 
     methods:{

@@ -262,6 +262,7 @@ font-size: 13px;
     position: relative;
     top: 60px;
     padding: 30px;
+    box-shadow: 1px 1px 15px lightgrey;
 }
 
 .listino_prezzi .card_listino_prezzi:nth-child(even){
@@ -313,10 +314,21 @@ font-size: 13px;
 
 /* blog e testimonial */
 .blog_testimonial{
-    background-color: aqua;
+    background-color: white;
     height: 1430px;
+    padding-top: 250px;
+    text-align: center;
 }
 
+.blog_testimonial .card_blog_grande{
+    
+    border: 1px solid #F9636B;
+    border-radius: 20px;
+}
+.blog_testimonial .card_blog{
+    border: 1px solid #F9636B;
+    border-radius: 20px;
+}
 
 /********** FOOTER **********/
 footer{
