@@ -250,6 +250,7 @@ main{
     background-color: #FFFFFF;
     height: 680px;
     max-width: 100%;
+    overflow-x: hidden;
 }
 .portfolio .container_testo_portfolio{
     margin-left: 10%;
@@ -272,11 +273,15 @@ main{
     margin-right: 10%;
 }
 .images{
+    width: 143%;
     flex-direction: row-reverse;
+    position: relative;
+    right: 316px;
 }
 .portfolio .card_portfolio{
     background-color: white;
-    height:250px;
+    height:315px;
+    width: 500px;
     border-radius: 20px;
     position: relative;
     left: 0;
@@ -305,7 +310,7 @@ font-size: 13px;
 .nav > i {
     color: lightgrey;
     padding: 0 5px;
-    margin-top: 70px;
+    margin-top: 20px;
 }
 .nav > i.active {
     color: #F9636B;
