@@ -152,8 +152,17 @@ main{
     box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
     border-radius: 20px;
     position: absolute;
-    right: 91px;
+    right: 92px;
     z-index: 2;
+}
+.card_servizi:first-child:hover img{
+    right: 103.5px;
+}
+.card_servizi:nth-child(3):hover img{
+    right: 95px;
+}
+.card_servizi:last-child:hover img{
+    right: 90px;
 }
 .card_servizi img{
     height:100px;
