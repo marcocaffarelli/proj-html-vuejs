@@ -21,11 +21,7 @@
 }
 /********** HEADER **********/
 header{
-    background-color: rgb(0, 0, 49);
-    background-image: url(../img/header.png);
-    background-size: 35%;
-    background-repeat: no-repeat;
-    background-position: 81% 40%;
+    background-image: linear-gradient(360deg, rgba(4,4,39,1) 0%, rgba(11,25,82,1) 100%);
     height: 767px;
     width: 1440px;
 }
@@ -62,8 +58,7 @@ nav{
     height: 490px;
     color: white;
     margin-left: 10%;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 }
 .jumbodron h1, .jumbodron h2{
     font-size: 45px;
@@ -94,8 +89,11 @@ nav{
 }
 .jumbodron button:last-child:hover{
     background: linear-gradient(270deg, rgba(244,94,107,1) 0%, rgba(185,39,110,1) 62%);
-
-
+}
+.jumbodron img{
+    width: 510px;
+    margin-right: 180px;
+    margin-top: 30px;
 }
 
 /********** MAIN **********/
@@ -129,7 +127,7 @@ main{
     position: relative;
 }
 .card_servizi:hover > div{
-    background-color: rgb(0, 0, 49);
+    background-image: linear-gradient(360deg, rgba(4,4,39,1) 0%, rgba(11,25,82,1) 100%);
     border-radius: 20px;
     color: white;
     position: absolute;
@@ -191,11 +189,7 @@ main{
 
 /* start_your_project */
 .start_your_project{
-    background-image: url(../img/nemoodar.png) ;
-    background-size: 20%;
-    background-repeat: no-repeat;
-    background-position: 15% 22%;
-    background-color: rgb(0, 0, 49);
+    background-image: linear-gradient(360deg, rgba(4,4,39,1) 0%, rgba(11,25,82,1) 100%);
     height: 592px;
     align-items: center;
     color: white;
@@ -209,8 +203,19 @@ main{
 .start_your_project > div > div:first-child{
     margin-bottom: 30px;
 }
-.start_your_project img{
+.img_container{
+    position: relative;
+}
+.start_your_project img:first-child{
+    height: 400px;
+    position: absolute;
+    left: 200px;
+    top: 40px;
+}
+.start_your_project img:last-child{
     height: 350px;
+    margin-right: 50px;
+    margin-bottom: 110px;
 }
 .start_your_project h3{
     font-size: 45px;
@@ -308,7 +313,7 @@ font-size: 13px;
 
 /* listino prezzi */
 .listino_prezzi{
-    background-color: rgb(0, 0, 49);
+    background-image: linear-gradient(270deg, rgba(4,4,39,1) 0%, rgba(11,25,82,1) 100%);
     height: 527px;
     color: white;
     text-align: center;
@@ -521,7 +526,7 @@ font-size: 13px;
 }
 /********** FOOTER **********/
 footer{
-    background-color: rgb(0, 0, 49);
+    background-image: linear-gradient(360deg, rgba(4,4,39,1) 0%, rgba(11,25,82,1) 100%);
     width:1440px;
     height: 460px;
 }
