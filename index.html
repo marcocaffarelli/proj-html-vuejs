@@ -29,8 +29,8 @@
                     <div class="link_navbar">
                         <ul class="d_flex">
                             <!-- link della navbar -->
-                            <li v-for="link in listLinkNavbar">
-                                <a href="#">{{link}}</a>     
+                            <li v-for="(link, index) in listLinkNavbar">
+                                <a href="#" :class="(index == linkAttivo) ? 'active' : null">{{link}}</a>     
                             </li>
                             <!-- /link della navbar -->
                             <button>Sign In</button>

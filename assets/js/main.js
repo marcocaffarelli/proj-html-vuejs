@@ -11,6 +11,8 @@ let app = new Vue({
             'Portfolio',
         ],
 
+        linkAttivo:0,
+
         //card section servizi
         cards:[
             {
