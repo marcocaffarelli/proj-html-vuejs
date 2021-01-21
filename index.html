@@ -69,8 +69,11 @@
                         <!-- card -->
                         <div class="card_servizi" v-for="card in cards">
                             <img :src="`assets/img/${card.img}`" alt="">
-                            <h4>{{card.titolo}}</h4>
-                            <div class="c_grey">{{card.testo}}</div>
+                            <div>
+                                <h4>{{card.titolo}}</h4>
+                                <div class="c_grey">{{card.testo}}</div>
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
                         </div>
                         <!-- /card -->
                     </div>

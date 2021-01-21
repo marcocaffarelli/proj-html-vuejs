@@ -50,7 +50,7 @@ nav{
     color:white;
 }
 .link_navbar button{
-    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 100%);
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,163,208,1) 0%, rgba(30,64,131,1) 100%);
     border: none;
     border-radius: 15px;
     color: white;
@@ -82,11 +82,20 @@ nav{
     padding: 10px 20px;
 }
 .jumbodron button:first-child{
-    background: linear-gradient(270deg, rgba(255,70,70,1) 0%, rgba(209,33,99,1) 62%);
+    background: linear-gradient(270deg, rgba(244,94,107,1) 0%, rgba(185,39,110,1) 62%);
+    padding: 10px 30px;
+}
+.jumbodron button:first-child:hover{
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,163,208,1) 0%, rgba(30,64,131,1) 100%);
 }
 .jumbodron button:last-child{
-    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 100%);
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,163,208,1) 0%, rgba(30,64,131,1) 100%);
     margin: 0 20px;
+}
+.jumbodron button:last-child:hover{
+    background: linear-gradient(270deg, rgba(244,94,107,1) 0%, rgba(185,39,110,1) 62%);
+
+
 }
 
 /********** MAIN **********/
@@ -117,6 +126,34 @@ main{
     width: 25%;
     padding: 30px 50px;
     margin: 100px 0;
+    position: relative;
+}
+.card_servizi:hover > div{
+    background-color: rgb(0, 0, 49);
+    border-radius: 20px;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    padding-top: 100px;
+    padding-bottom:21px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+.card_servizi:hover > div > div{
+    color: white;
+}
+.card_servizi:hover  i{
+    visibility: visible;
+    position: absolute;
+    right: 130px;
+}
+.card_servizi:hover img{
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+    border-radius: 20px;
+    position: absolute;
+    right: 91px;
+    z-index: 2;
 }
 .card_servizi img{
     height:100px;
@@ -125,8 +162,16 @@ main{
 .card_servizi h4{
     margin-bottom: 30px;
 }
+.card_servizi i{
+    background: linear-gradient(325deg, rgba(244,94,107,1) 0%, rgba(185,39,110,1) 62%);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    visibility: hidden;
+}
 .servizi button{
-    background: linear-gradient(325deg, rgba(255,70,70,1) 0%, rgba(209,33,99,1) 62%);
+    background: linear-gradient(325deg, rgba(244,94,107,1) 0%, rgba(185,39,110,1) 62%);
     border: none;
     border-radius: 25px;
     color: white;
@@ -173,11 +218,18 @@ main{
     padding: 10px 30px;
 }
 .start_your_project button{
-    background: linear-gradient(270deg, rgba(255,70,70,1) 0%, rgba(209,33,99,1) 62%);
+    background: linear-gradient(270deg, rgba(244,94,107,1) 0%, rgba(185,39,110,1) 62%);
+}
+.start_your_project button:hover{
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,163,208,1) 0%, rgba(30,64,131,1) 100%);
 }
 .start_your_project button:last-child{
-    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 100%);
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,163,208,1) 0%, rgba(30,64,131,1) 100%);
     margin: 0 20px;
+    padding: 10px 20px;
+}
+.start_your_project button:last-child:hover{
+    background: linear-gradient(270deg, rgba(244,94,107,1) 0%, rgba(185,39,110,1) 62%);
 }
 /* portfolio */
 .portfolio{
@@ -216,6 +268,9 @@ main{
     left: 0;
     margin: 0 1%;
     box-shadow: 1px 1px 15px lightgrey;
+}
+.portfolio .card_portfolio:hover{
+    background: linear-gradient(315deg, rgba(244,94,107,1) 0%, rgba(185,39,110,1) 60%);
 }
 .portfolio img{
     width: 100%;
@@ -259,7 +314,7 @@ font-size: 13px;
 .listino_prezzi .card_listino_prezzi{
     border-radius: 20px;
     display: inline-block;
-    background: linear-gradient(315deg, rgba(255,70,70,1) 0%, rgba(209,33,99,1) 60%);
+    background: linear-gradient(315deg, rgba(244,94,107,1) 0%, rgba(185,39,110,1) 60%);
     margin: 0 30px;
     width: 375px;
     height: 556px;
@@ -302,8 +357,9 @@ font-size: 13px;
     border-radius: 25px;
     color: white;
     padding: 10px 20px;
-    background: linear-gradient(360deg, rgba(255,70,70,1) 0%, rgba(209,33,99,1) 62%);
+    background: linear-gradient(360deg, rgba(244,94,107,1) 0%,rgba(185,39,110,1) 62%);
     margin-top: 40px;
+    box-shadow: 1px 1px 25px #F9636B;
 }
 .listino_prezzi .card_listino_prezzi:nth-child(odd) button{
     color: #F9636B;
@@ -361,7 +417,7 @@ font-size: 13px;
     margin: 10px 0;
 }
 .blog_testimonial .card_blog{
-    background: linear-gradient(135deg, rgb(1, 0, 49) 0%, rgb(6, 0, 83) 92%);
+    background: linear-gradient(135deg, rgb(2, 2, 48) 0%, rgb(21, 45, 105) 92%);
     border-radius: 20px;
     width: 288px;
     height: 345px;
@@ -386,7 +442,7 @@ font-size: 13px;
 .blog_testimonial button{
     border: none;
     border-radius: 25px;
-    color: #888888;
+    color: #00000080;
     background-color: white;
     padding: 10px 20px;
 }
@@ -399,12 +455,12 @@ font-size: 13px;
 }
 .blog_testimonial .card_testimonial img{
     width: 80px;
-    border: 4px solid #F9636B;
+    border: 4px solid #B6246E;
     border-radius: 50%;
 } 
 .blog_testimonial .card_testimonial i{
     margin: 40px 0;
-    color: #F9636B;
+    color: #B6246E;
 } 
 
 .blog_testimonial .card_testimonial h4{
@@ -423,7 +479,7 @@ font-size: 13px;
     height: 200px;
     width: 80%;
     margin: auto;
-    background: linear-gradient(270deg, rgba(255,70,70,1) 0%, rgba(209,33,99,1) 62%);
+    background: linear-gradient(270deg, rgba(244,94,107,1) 0%, rgba(185,39,110,1) 62%);
     border-radius: 20px;
     position: relative;
     top: 110px;
@@ -446,7 +502,7 @@ font-size: 13px;
     border: none;
     border-radius: 25px;
     color: white;
-    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 100%);
+    background-image: linear-gradient(90deg, rgba(2,2,42,1) 0%, rgba(4,163,208,1) 0%, rgba(30,64,131,1) 100%);
     padding: 10px 20px;
     margin-left: 130px;
 }
