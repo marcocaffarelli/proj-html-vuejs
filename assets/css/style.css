@@ -18,40 +18,65 @@
 .c_orange{
     color:#F9636B
 }
-#app{
-   flex-direction: column; 
-   align-items: center;
+.titolo_magro{
+    font-weight: 400;
 }
+
 /********** STILI RIPETUTI **********/
 header, .card_servizi:hover > div, .start_your_project, footer{
     background-image: linear-gradient(360deg, rgba(4,4,39,1) 0%, rgba(11,25,82,1) 100%);
 }
+
 header, main, footer{
     width: 1440px;
 }
+
 nav, .footer_navbar{
     height: 73px;
 }
+
 nav, .servizi, .contenuto_footer{
     width: 1236px; 
 }
+
 nav, .servizi, .contenuto_footer, .blog_testimonial .input_container{
     margin: auto;   
 }
+
+nav, .start_your_project, .blog_testimonial .input_container, .footer_navbar{
+    align-items: center;
+}
+
+.link_navbar ul li, .loghi{
+    list-style: none;
+}
+
+.jumbodron button:first-child, .jumbodron button:last-child:hover, .start_your_project button, .start_your_project button:last-child:hover{
+    background: linear-gradient(270deg, rgba(244,94,107,1) 0%, rgba(185,39,110,1) 62%);
+}
+
+.link_navbar button, .jumbodron button:first-child:hover, .jumbodron button:last-child, .start_your_project button:hover, .start_your_project button:last-child{
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,163,208,1) 0%, rgba(30,64,131,1) 100%);
+}
+
+button{
+    cursor: pointer;
+}
+
+/********** CONTAINER **********/
+#app{
+    flex-direction: column; 
+    align-items: center;
+}
+
 /********** HEADER **********/
 header{
     height: 767px;
 }
-/* navbar */
-nav{
-    align-items: center;
-}
 
+/* navbar */
 .logo_navbar img{
     width: 130px;
-}
-.link_navbar ul li{
-    list-style: none;
 }
 .link_navbar ul li a{
     text-decoration: none;
@@ -61,9 +86,7 @@ nav{
 .link_navbar ul li .active{
     color:#F9636B;
 }
-
 .link_navbar button{
-    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,163,208,1) 0%, rgba(30,64,131,1) 100%);
     border: none;
     border-radius: 15px;
     color: white;
@@ -71,6 +94,7 @@ nav{
     margin-left: 30px;
 }
 
+/* jumbodron */
 .jumbodron{
     height: 694px;
     color: white;
@@ -83,9 +107,6 @@ nav{
 .jumbodron h1, .jumbodron h2{
     font-size: 45px;
 }
-.titolo_magro{
-    font-weight: 400;
-}
 .jumbodron > div > div{
     color: #03A7D3E6;
     padding: 30px 0;
@@ -97,18 +118,10 @@ nav{
     padding: 10px 20px;
 }
 .jumbodron button:first-child{
-    background: linear-gradient(270deg, rgba(244,94,107,1) 0%, rgba(185,39,110,1) 62%);
     padding: 10px 30px;
 }
-.jumbodron button:first-child:hover{
-    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,163,208,1) 0%, rgba(30,64,131,1) 100%);
-}
 .jumbodron button:last-child{
-    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,163,208,1) 0%, rgba(30,64,131,1) 100%);
     margin: 0 20px;
-}
-.jumbodron button:last-child:hover{
-    background: linear-gradient(270deg, rgba(244,94,107,1) 0%, rgba(185,39,110,1) 62%);
 }
 .jumbodron img{
     width: 610px;
@@ -117,9 +130,6 @@ nav{
 }
 
 /********** MAIN **********/
-.servizi{
-    margin:auto;
-} 
 
 /* servizi */
 .servizi{
@@ -205,7 +215,6 @@ nav{
 /* start_your_project */
 .start_your_project{
     height: 592px;
-    align-items: center;
     color: white;
 }
 .start_your_project > div{
@@ -245,20 +254,11 @@ nav{
     color: white;
     padding: 10px 30px;
 }
-.start_your_project button{
-    background: linear-gradient(270deg, rgba(244,94,107,1) 0%, rgba(185,39,110,1) 62%);
-}
-.start_your_project button:hover{
-    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,163,208,1) 0%, rgba(30,64,131,1) 100%);
-}
 .start_your_project button:last-child{
-    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,163,208,1) 0%, rgba(30,64,131,1) 100%);
     margin: 0 20px;
     padding: 10px 20px;
 }
-.start_your_project button:last-child:hover{
-    background: linear-gradient(270deg, rgba(244,94,107,1) 0%, rgba(185,39,110,1) 62%);
-}
+
 /* portfolio */
 .portfolio{
     background-color: #FFFFFF;
@@ -360,7 +360,7 @@ font-size: 13px;
     position: relative;
     bottom: 102px;
     margin-left: 70px;
-    }
+}
 .listino_prezzi .card_listino_prezzi .card_trasparente{
    background-color: rgba(0,0,0,0);
    position: absolute;
@@ -542,7 +542,6 @@ font-size: 13px;
     margin-top: 50px;
 }
 .loghi{
-    list-style: none;
     margin-top: 150px;
     justify-content: space-around;
 }
@@ -553,7 +552,6 @@ font-size: 13px;
     border-radius: 20px;
     position: relative;
     top: 145px;
-    align-items: center;
     color: white;
     text-align: left;
     padding: 0 30px;
@@ -582,10 +580,13 @@ font-size: 13px;
     border: 1px solid white;
     margin-left: 12px;
 }
+
 /********** FOOTER **********/
 footer{
     height: 460px;
 }
+
+/* contenuto footer */
 .contenuto_footer{
     height: 387px;
     padding-top: 160px;
@@ -623,9 +624,10 @@ footer{
 .contenuto_footer .quarta > div:nth-child(2){
     margin-bottom: 20px;
 }
+
+/* footer navbar */
 .footer_navbar{
     width:100%;
-    align-items: center;
     color: #818A91;
     border-top: 1px solid #818A91;
     position: relative;
