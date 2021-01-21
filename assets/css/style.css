@@ -336,6 +336,24 @@ font-size: 13px;
     top: 80px;
     padding: 30px;
     box-shadow: 1px 1px 15px lightgrey;
+    position: relative;
+}
+.listino_prezzi .card_listino_prezzi > div > div:first-child{
+    font-size: 250px;
+    font-weight: bold;
+    opacity: 0.2;
+    position: relative;
+    bottom: 102px;
+    margin-left: 70px;
+    }
+.listino_prezzi .card_listino_prezzi .card_trasparente{
+   background-color: rgba(0,0,0,0);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
 }
 
 .listino_prezzi .card_listino_prezzi:nth-child(even){
@@ -344,27 +362,36 @@ font-size: 13px;
     
 }
 .listino_prezzi .card_listino_prezzi h4{
-    font-size: 25px;
+    margin-top: 18px;
+    font-size: 40px;
+    font-family: 'Fira Sans', sans-serif;
 }
 .listino_prezzi .card_listino_prezzi h5{
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Fira Sans', sans-serif;
 }
 .listino_prezzi .card_listino_prezzi .dollaro{
     position: relative;
     right: 50px;
-    margin-top: 30px;
+    margin-top: 20px;
     padding-bottom: 0;
+    font-family: 'Fira Sans', sans-serif;
 }
 .listino_prezzi .card_listino_prezzi div{
-    font-size: 10px;
+    font-size: 12px;
     padding: 8px 0;
 }
 .listino_prezzi .card_listino_prezzi .numero{
     font-size: 70px;
     font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+    
 }
 .listino_prezzi .card_listino_prezzi .month{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    font-family: 'Fira Sans', sans-serif;
 }
 .listino_prezzi button{
     border: none;
