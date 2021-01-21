@@ -9,6 +9,9 @@
 .d_flex{
     display: flex;
 }
+.j_content_s_b{
+    justify-content: space-between;
+}
 .c_grey{
     color: #888888
 }
@@ -19,18 +22,28 @@
    flex-direction: column; 
    align-items: center;
 }
+/********** STILI RIPETUTI **********/
+header, .card_servizi:hover > div, .start_your_project, footer{
+    background-image: linear-gradient(360deg, rgba(4,4,39,1) 0%, rgba(11,25,82,1) 100%);
+}
+header, main, footer{
+    width: 1440px;
+}
+nav, .footer_navbar{
+    height: 73px;
+}
+nav, .servizi, .contenuto_footer{
+    width: 1236px; 
+}
+nav, .servizi, .contenuto_footer, .blog_testimonial .input_container{
+    margin: auto;   
+}
 /********** HEADER **********/
 header{
-    background-image: linear-gradient(360deg, rgba(4,4,39,1) 0%, rgba(11,25,82,1) 100%);
     height: 767px;
-    width: 1440px;
 }
 /* navbar */
 nav{
-    height: 73px;
-    width: 1236px;
-    margin:auto;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -62,7 +75,6 @@ nav{
     height: 694px;
     color: white;
     margin-left: 10%;
-    justify-content: space-between;
 }
 .jumbodron > div:first-child{
     height: 100%;
@@ -105,11 +117,7 @@ nav{
 }
 
 /********** MAIN **********/
-main{
-    width: 1440px;
-}
 .servizi{
-    width: 1236px;
     margin:auto;
 } 
 
@@ -135,7 +143,6 @@ main{
     position: relative;
 }
 .card_servizi:hover > div{
-    background-image: linear-gradient(360deg, rgba(4,4,39,1) 0%, rgba(11,25,82,1) 100%);
     border-radius: 20px;
     color: white;
     position: absolute;
@@ -197,7 +204,6 @@ main{
 
 /* start_your_project */
 .start_your_project{
-    background-image: linear-gradient(360deg, rgba(4,4,39,1) 0%, rgba(11,25,82,1) 100%);
     height: 592px;
     align-items: center;
     color: white;
@@ -266,9 +272,6 @@ main{
 .portfolio > .container_testo_portfolio > div:first-child{
     margin-top: 85px;
 }
-.arrow_text_container{
-    justify-content: space-between;
-}
 .portfolio h3{
     font-size: 30px;
     margin-bottom: 70px;
@@ -304,7 +307,6 @@ main{
     border-radius: 20px;
 }
 .portfolio .container_text_portfolio{
-    justify-content: space-between;
     margin-top: 12px;
     padding: 0 10px;
 }
@@ -463,7 +465,6 @@ font-size: 13px;
     border-radius: 20px;
     color: white;
     text-align: left;
-    justify-content: space-between;
     align-items: flex-end;
     padding: 20px 10px;
 }
@@ -548,12 +549,10 @@ font-size: 13px;
 .blog_testimonial .input_container{
     height: 200px;
     width: 80%;
-    margin: auto;
     background: linear-gradient(270deg, rgba(244,94,107,1) 0%, rgba(185,39,110,1) 62%);
     border-radius: 20px;
     position: relative;
     top: 145px;
-    justify-content: space-between;
     align-items: center;
     color: white;
     text-align: left;
@@ -585,18 +584,13 @@ font-size: 13px;
 }
 /********** FOOTER **********/
 footer{
-    background-image: linear-gradient(360deg, rgba(4,4,39,1) 0%, rgba(11,25,82,1) 100%);
-    width:1440px;
     height: 460px;
 }
 .contenuto_footer{
     height: 387px;
-    width: 1236px;
-    margin:auto;
     padding-top: 160px;
     color: #818A91;
     font-size: 12px;
-    justify-content: space-between;
 }
 .contenuto_footer .card_footer{
     margin: 20px;
@@ -630,9 +624,7 @@ footer{
     margin-bottom: 20px;
 }
 .footer_navbar{
-    height:73px;
     width:100%;
-    justify-content: space-between;
     align-items: center;
     color: #818A91;
     border-top: 1px solid #818A91;
